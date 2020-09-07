@@ -40,3 +40,17 @@ body, html {
     text-decoration: none;
     color: white;
 }
+
+#quick_stats {
+    text-align: center;
+}
+
+#quick_stats > hr {
+    width: 10%;
+}
+
+.float_left {
+    float: left;
+    width: 20%;
+    padding-left: 4%;
+}
