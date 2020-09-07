@@ -54,3 +54,21 @@ body, html {
     width: 20%;
     padding-left: 4%;
 }
+
+.quote_section__container {
+    padding-left: 10%;
+}
+
+.quote_section__container > img {
+    height: 70%;
+    border-radius: 60%;
+    border: solid grey 4px;
+}
+
+.quote_section__container > p {
+    display: inline-block;
+    vertical-align: middle;
+    width: 50%;
+    font-size: 2rem;
+    transform: translateY(-50%);
+}
