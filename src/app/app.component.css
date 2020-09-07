@@ -1,0 +1,42 @@
+body, html {
+    height: 100%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.background {
+    background-image: url('../assets/images/progress.jpg');
+
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#introduction > header {
+    text-align: center;
+    font-size: 2rem;
+    transform: translateY(30%);
+    color: white;
+}
+
+#introduction > header > ul {
+    list-style: none;
+    font-size: 1rem;
+}
+
+/* How to align element in center */
+#introduction > header > ul > li {
+    display: inline-block;
+    vertical-align: middle;
+    padding-right: 2%;
+}
+
+#belief_text {
+    transform: translateY(100%);
+}
+
+.discover_text {
+    text-decoration: none;
+    color: white;
+}
