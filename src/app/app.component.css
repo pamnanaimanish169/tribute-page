@@ -72,3 +72,8 @@ body, html {
     font-size: 2rem;
     transform: translateY(-50%);
 }
+
+.introduction__inner_text {
+    width: 40%;
+    display: inline-block;
+}
