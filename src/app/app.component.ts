@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'tribute-page';
+
+  constructor(private myElement: ElementRef) {}
+
+  gotoSection() {
+    let el = this.myElement.nativeElement.querySelector("#quick_stats");
+    console.log(el)
+    el.scrollIntoView()
+  }
 }
