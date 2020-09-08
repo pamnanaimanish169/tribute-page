@@ -189,3 +189,22 @@ body, html {
     left: 45%;
 }
 /* Timeline END */
+
+/* GALLERY START */
+.gallery {
+    text-align: center;
+}
+
+.gallery > hr {
+    width: 10%;
+}
+
+.gallery > img {
+    width: 20%;
+    height: 70%;
+    float: left;
+    border-radius: 1%;
+    padding-left: 9%;
+    padding-top: 3%;
+}
+/* GALLERY END */
