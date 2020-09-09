@@ -36,6 +36,10 @@ body, html {
     padding-right: 2%;
 }
 
+#introduction > header > ul > li > a {
+    text-decoration: none; color: white;
+}
+
 #belief_text {
     transform: translateY(100%);
 }
@@ -203,7 +207,6 @@ body, html {
     float: left;
     height: 300px;
     width: 450px;
-    background: url('../assets/images/Linus-Torvalds-1.jpg');
     margin-left: 10%;
 }
 
@@ -276,3 +279,105 @@ body, html {
 div {
     margin-top: 5%;
 }
+
+
+/* Responsive Media Queries START */
+@media screen and (device-width: 360px)
+and (device-height: 640px)
+and (-webkit-device-pixel-ratio: 3) {
+    /* HEADER START */
+    #introduction > header {
+        transform: translateY(0%);
+        font-size: inherit;
+    }
+    #belief_text {
+        transform: translateY(0%);
+    }
+    /* HEADER END */
+
+    /* QUICK STATS START */
+    .float_left {
+        width: 100%;
+    }
+    /* QUICK STATS END */
+
+    /* QUOTE SECTION START */
+    .quote_section__container {
+        padding-left: 0;
+    }
+
+    .quote_section__container > p {
+        transform: translateY(0%);
+        width: 100%;
+    }
+
+    .quote_section__container > img {
+        width: 100%;
+    }
+    /* QUOTE SECTION END */
+
+    /* INTRODUCTION START */
+    .introduction__inner_text {
+        width: 100%;
+    }
+    /* INTRODUCTION END */
+
+    /* COMPANIES START */
+    .timeline:before {
+        position: absolute;
+        top: 2.7%;
+        height: 92.3%;
+    }
+    .timeline {
+        width: 100%;
+    }
+    .timeline ul li {
+        width: 100%;
+    }
+    .timeline:before {
+        left: 0;
+    }
+    .timeline ul li:nth-child(odd):before {
+        left: -4px;
+    }
+    .timeline ul li:nth-child(odd) .time {
+        right: 50%;
+    }
+    .timeline ul li:nth-child(even) .time {
+        left: 11%;
+    }
+    .content {
+        margin-top: 15%;
+        text-align: left;
+    }
+    /* COMPANIES END */
+
+    /* GALLERY START */
+    #image_container {
+        margin-left: 0;
+        height: 50%;
+        width: 100%;
+    }
+
+    #image_container > img {
+        width: 100%;
+    }
+    /* GALLERY END */
+
+    /* FOOTER START */
+    .background {
+        min-height: 0;
+        display: inline-block;
+    }
+    .footer > footer {
+        transform: translateY(0%);
+        font-size: inherit;
+    }
+    .footer > footer > ul {
+        display: inline-block;
+        width: 100%;
+        padding-inline-start: 0;
+    }   
+    /* FOOTER END */
+}
+/* Responsive Media Queries END */
