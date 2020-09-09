@@ -15,4 +15,12 @@ export class AppComponent {
     console.log(el)
     el.scrollIntoView()
   }
+
+  showMenu() {
+    let menu = document.getElementById('menu');
+    menu.style.display = 'block'
+    menu.style.backgroundImage = 'linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5))';
+    let name = document.getElementsByClassName('name')[0];
+    name['style']['display'] = 'none'
+  }
 }
