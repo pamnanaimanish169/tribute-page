@@ -1,6 +1,7 @@
 body, html {
     height: 100%;
     font-family: 'Montserrat', sans-serif;
+    margin: 0;
 }
 
 /* Header START */
@@ -100,6 +101,15 @@ body, html {
     margin: 50px auto;
     padding: 40px 0;
     width: 1000px;
+    margin-left: 3%;
+}
+
+.timeline {
+    text-align: center;
+}
+
+.timeline > hr {
+    width: 10%;
 }
 
 .timeline ul {
@@ -315,6 +325,11 @@ and (-webkit-device-pixel-ratio: 3) {
     #menu  > li {
         width: 100%;
     }
+
+    .background {
+        width: 100%;
+        margin-top: 0%;
+    }
     /* HEADER END */
 
     /* QUICK STATS START */
@@ -347,8 +362,7 @@ and (-webkit-device-pixel-ratio: 3) {
     /* COMPANIES START */
     .timeline:before {
         position: absolute;
-        top: 2.7%;
-        height: 92.3%;
+        height: 92%;
     }
     .timeline {
         width: 100%;
